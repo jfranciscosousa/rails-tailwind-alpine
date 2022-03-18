@@ -1,0 +1,8 @@
+
+<div x-data="{ open: true }" x-show="open" x-transition class="shadow py-4 alert <%= @alert_class %>">
+  <%= @message %>
+
+  <button @click="open = ! open">
+    X
+  </button>
+</div>

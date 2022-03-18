@@ -1,0 +1,11 @@
+<%= form_with model: user, class: "contents mt-8" do |form| %>
+  <%= render(Forms::FormErrorsComponent.new(errors: user.errors)) %>
+
+  <%= render(Forms::InputComponent.new(form: form, type: :text, name: :email)) %>
+
+  <%= render(Forms::InputComponent.new(form: form, type: :password, name: :password)) %>
+
+  <%= render(Forms::InputComponent.new(form: form, type: :password, name: :password_confirmation)) %>
+
+  <%= form.submit class: "mt-8 btn btn-primary" %>
+<% end %>

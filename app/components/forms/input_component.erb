@@ -1,0 +1,4 @@
+<div class="form-control">
+  <%= @form.label @name, class: "label" %>
+  <%= @form.send("#{@type.to_s}_field", @name, class: "input input-bordered w-full", **@html) %>
+</div>

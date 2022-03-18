@@ -1,0 +1,15 @@
+<div class="mx-auto w-full">
+  <h1 class="font-bold text-4xl mb-8">Login</h1>
+
+  <%= form_with model: @user, url: login_path, class: "contents", method: :post do |form| %>
+    <%= render(Forms::FormErrorsComponent.new(errors: @user&.errors)) %>
+
+    <%= render(Forms::InputComponent.new(form: form, type: :text, name: :email, html: { autofocus: true })) %>
+
+    <%= render(Forms::InputComponent.new(form: form, type: :password, name: :password)) %>
+
+    <%= form.submit "Login", class: "mt-8 btn btn-primary" %>
+  <% end %>
+
+  <%= link_to 'Forgot Password?', new_password_reset_path %>
+</div>

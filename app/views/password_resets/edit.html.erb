@@ -1,0 +1,13 @@
+<h1 class="font-bold text-4xl mb-8">Choose a new password</h1>
+
+<%= form_with model: @user, url: password_reset_path(@token), method: :put, class: "mt-8" do |form| %>
+  <%= render(Forms::FormErrorsComponent.new(errors: @user.errors)) %>
+
+  <p class="font-medium my-8 text-xl">Current email: <%= @user.email %></p>
+
+  <%= render(Forms::InputComponent.new(form: form, type: :password, name: :password)) %>
+
+  <%= render(Forms::InputComponent.new(form: form, type: :password, name: :password_confirmation)) %>
+
+  <%= form.submit "Change password", class: "btn btn-primary mt-8" %>
+<% end %>

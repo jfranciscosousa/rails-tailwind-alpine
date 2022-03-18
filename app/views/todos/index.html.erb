@@ -1,0 +1,19 @@
+<h1 class="text-2xl font-bold">Todos</h1>
+
+<ul class="mt-4 space-y-4 flex flex-col">
+  <% @todos.each do |todo| %>
+    <li class="flex space-x-4">
+      <a href="/todos/<%= todo.id %>">
+        <%= todo.content %>
+      </a>
+
+      <%= button_to "X", todo_path(todo), method: :delete %>
+    </li>
+  <% end %>
+</ul>
+
+<%= form_with model: Todo.new, class: "mt-8" do |form| %>
+  <%= render(Forms::InputComponent.new(form: form, type: :text, name: :content, html: { autofocus: true })) %>
+
+  <%= form.submit "Submit", class: "mt-8 btn btn-primary" %>
+<% end %>
