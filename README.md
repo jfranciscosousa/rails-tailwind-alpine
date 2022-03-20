@@ -15,7 +15,13 @@ It also ships with:
 
 - `node`
 - `ruby-3.1.0`
+- `postgres`
 
-## Scripts
+## Setup
 
-Just run `bin/setup` and then `bin/dev`.
+Make sure you have a `postgres` database available on `localhost:5432`. After that you just need to run `bin/setup`.
+
+## Development
+
+Just run `bin/dev` and you can check out your site at `localhost:5000`.
+
