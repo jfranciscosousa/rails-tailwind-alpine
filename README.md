@@ -1,24 +1,21 @@
-# README
+# rails-tailwind-alpine
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Rails starter where I minimize context switching by using `tailwind` and `alpine` trying to keep almost everything in my `HTML`.
 
-Things you may want to cover:
+It also ships with:
+- `view_component`
+- `sorcery`
+  - email/password auth
+  - password reset
+  - a secured resource `Todo` as an example
+- `rspec` and some sample tests
+- `daisy-ui` for some Tailwind base styles
 
-* Ruby version
+## Requirements
 
-* System dependencies
+- `node`
+- `ruby-3.1.0`
 
-* Configuration
+## Scripts
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Just run `bin/setup` and then `bin/dev`.
