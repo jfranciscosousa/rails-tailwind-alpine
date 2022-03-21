@@ -1,5 +1,15 @@
+<%
+  alert_class = case @type
+    when :alert
+      "alert-warning"
+    when :notice
+      "alert-info"
+    else
+      ""
+  end
+%>
 
-<div x-data="{ open: true }" x-show="open" x-transition class="shadow py-4 alert <%= @alert_class %>">
+<div x-data="{ open: true }" x-show="open" x-transition class="shadow py-4 alert <%= alert_class %>">
   <%= @message %>
 
   <button @click="open = ! open">
