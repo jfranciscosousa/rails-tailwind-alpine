@@ -23,7 +23,7 @@ RSpec.describe UserSessionsController do
     it "redirects to root_path on a successful login" do
       user = create(:user)
 
-      post login_path, params: { email: user.email, password: "foobar" }
+      post login_path, params: { user: { email: user.email, password: "foobar" } }
 
       expect(response).to redirect_to(root_path)
     end
@@ -31,7 +31,7 @@ RSpec.describe UserSessionsController do
     it "renders the login template if login is bad" do
       user = create(:user)
 
-      post login_path, params: { email: user.email, password: "bad_foobar" }
+      post login_path, params: { user: { email: user.email, password: "bad_foobar" } }
 
       expect(response).to render_template(:new)
       expect(response).to have_http_status(:unprocessable_entity)

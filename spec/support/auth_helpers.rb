@@ -1,7 +1,7 @@
 module AuthHelpers
   module Request
     def login_user(user)
-      params = { email: user.email, password: "foobar" }
+      params = { user: { email: user.email, password: "foobar" } }
 
       send(:post, login_path, params: params)
     end
