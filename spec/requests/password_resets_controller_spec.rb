@@ -16,7 +16,7 @@ RSpec.describe PasswordResetsController do
 
       expect do
         post password_resets_path, params: { email: email }
-      end.to change { ActionMailer::Base.deliveries.count }.by(0)
+      end.not_to change { ActionMailer::Base.deliveries.count }
       expect(response).to redirect_to(login_path)
     end
   end

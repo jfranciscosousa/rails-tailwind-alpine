@@ -63,7 +63,7 @@ RSpec.describe UsersController do
 
       expect do
         post user_path, params: { user: user_params }
-      end.to change(User, :count).by(0)
+      end.not_to change(User, :count)
       expect(response).to redirect_to(root_path)
     end
   end
