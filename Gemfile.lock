@@ -229,7 +229,7 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redis (4.6.0)
+    redis (4.7.0)
     regexp_parser (2.5.0)
     reline (0.3.1)
       io-console (~> 0.5)
@@ -333,7 +333,7 @@ DEPENDENCIES
   rack-livereload
   rails (~> 7.0.3)
   rails-controller-testing
-  redis (~> 4.0)
+  redis (~> 4.7)
   rspec-rails (~> 5.1.2)
   rubocop
   rubocop-performance
