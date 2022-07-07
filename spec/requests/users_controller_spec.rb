@@ -5,7 +5,7 @@ RSpec.describe UsersController do
     it "renders the correct template" do
       get signup_path
 
-      expect(response.status).to eq(200)
+      expect(response).to have_http_status(200)
       expect(response).to render_template(:new)
     end
 
@@ -26,7 +26,7 @@ RSpec.describe UsersController do
 
       get edit_user_path
 
-      expect(response.status).to eq(200)
+      expect(response).to have_http_status(200)
       expect(response).to render_template(:edit)
     end
 
