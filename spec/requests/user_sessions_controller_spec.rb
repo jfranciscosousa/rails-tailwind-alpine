@@ -5,7 +5,7 @@ RSpec.describe UserSessionsController do
     it "has a 200 status code" do
       get login_path
 
-      expect(response.status).to eq(200)
+      expect(response).to have_http_status(:ok)
       expect(response).to render_template(:new)
     end
 
