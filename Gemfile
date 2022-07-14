@@ -5,7 +5,7 @@ ruby "3.1.0"
 
 gem "sorcery", "~> 0.16.3"
 
-gem "view_component", "~> 2.57.1"
+gem "view_component", "~> 2.59.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3"
