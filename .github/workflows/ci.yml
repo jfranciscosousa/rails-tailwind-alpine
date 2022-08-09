@@ -9,7 +9,9 @@ on:
 jobs:
   test:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
+
     runs-on: ubuntu-latest
+
     services:
       postgres:
         image: postgres:11
@@ -24,18 +26,19 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Setup Ruby
+      - name: Read .tool-versions
+        uses: marocchino/tool-versions-action@v1
+        id: versions
+
+      - name: Setup ruby ${{ steps.versions.outputs.ruby}}
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.0
+          ruby-version: ${{ steps.versions.outputs.ruby}}
 
-      - name: Setup node
+      - name: Setup node ${{ steps.versions.outputs.nodejs}}
         uses: actions/setup-node@v2-beta
         with:
-          node-version: 16.14.0
-
-      - name: Setup Chromedriver
-        uses: nanasess/setup-chromedriver@master
+          node-version: ${{ steps.versions.outputs.nodejs}}
 
       - name: Cache ruby deps
         uses: actions/cache@v2
