@@ -12,3 +12,7 @@
 *:disabled {
   cursor: not-allowed;
 }
+
+[x-cloak] {
+  display: none !important;
+}

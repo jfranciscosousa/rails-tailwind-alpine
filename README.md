@@ -10,6 +10,7 @@ It also ships with:
   - a secured resource `Todo` as an example
 - `rspec` and some sample tests
 - `daisy-ui` for some Tailwind base styles
+- `vite` for js and css bundling. Not using importmaps so we can have dependabot checks for js packages
 
 ## Requirements
 
@@ -23,5 +24,5 @@ Make sure you have a `postgres` database available on `localhost:5432`. After th
 
 ## Development
 
-Just run `bin/dev` and you can check out your site at `localhost:5000`.
+Just run `bin/server` and you can check out your site at `localhost:5000`.
 
