@@ -5,7 +5,7 @@ ruby "3.1.2"
 
 gem "sorcery", "~> 0.16.3"
 
-gem "view_component", "~> 2.70.0"
+gem "view_component", "~> 2.71.0"
 
 gem "vite_rails"
 
