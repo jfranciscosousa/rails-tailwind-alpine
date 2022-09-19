@@ -280,7 +280,7 @@ GEM
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     shellany (0.0.1)
-    shoulda-matchers (5.1.0)
+    shoulda-matchers (5.2.0)
       activesupport (>= 5.2.0)
     sorcery (0.16.3)
       bcrypt (~> 3.1)
@@ -348,7 +348,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
-  shoulda-matchers (~> 5.0)
+  shoulda-matchers (~> 5.2)
   sorcery (~> 0.16.3)
   sprockets-rails
   turbo-rails
