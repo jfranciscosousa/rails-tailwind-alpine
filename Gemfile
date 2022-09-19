@@ -54,7 +54,7 @@ group :test do
   gem "factory_bot"
   gem "faker"
   gem "rails-controller-testing"
-  gem "shoulda-matchers", "~> 5.0"
+  gem "shoulda-matchers", "~> 5.2"
 end
 
 group :development do
