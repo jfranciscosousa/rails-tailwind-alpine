@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-gem "sorcery", "~> 0.16.3"
+gem "sorcery", "~> 0.16.4"
 
 gem "view_component", "~> 2.74.0"
 
