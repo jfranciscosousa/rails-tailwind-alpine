@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe TodosController, type: :request do
+RSpec.describe TodosController do
   describe "GET #index" do
     it "renders the current user's todos" do
       user = create(:user)
