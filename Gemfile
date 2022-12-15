@@ -3,10 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# Auth library
 gem "sorcery", "~> 0.16.4"
 
+# Library for ruby html/css/js components
 gem "view_component", "~> 2.74.1"
 
+# Vite is Webpack but good
 gem "vite_rails"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
