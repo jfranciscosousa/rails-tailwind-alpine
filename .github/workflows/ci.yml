@@ -30,15 +30,15 @@ jobs:
         uses: marocchino/tool-versions-action@v1
         id: versions
 
-      - name: Setup ruby ${{ steps.versions.outputs.ruby}}
+      - name: Setup ruby ${{ steps.versions.outputs.ruby }}
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{ steps.versions.outputs.ruby}}
+          ruby-version: ${{ steps.versions.outputs.ruby }}
 
-      - name: Setup node ${{ steps.versions.outputs.nodejs}}
+      - name: Setup node ${{ steps.versions.outputs.nodejs }}
         uses: actions/setup-node@v2-beta
         with:
-          node-version: ${{ steps.versions.outputs.nodejs}}
+          node-version: ${{ steps.versions.outputs.nodejs }}
 
       - name: Cache ruby deps
         uses: actions/cache@v2
