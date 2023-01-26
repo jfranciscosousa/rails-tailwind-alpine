@@ -129,6 +129,7 @@ GEM
       reline (>= 0.3.0)
     json (2.6.3)
     jwt (2.6.0)
+    language_server-protocol (3.17.0.2)
     launchy (2.5.0)
       addressable (~> 2.7)
     letter_opener (1.8.1)
@@ -184,6 +185,7 @@ GEM
     parser (3.1.3.0)
       ast (~> 2.4.1)
     pg (1.4.5)
+    prettier_print (1.2.0)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -279,6 +281,10 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-rspec (2.16.0)
       rubocop (~> 1.33)
+    ruby-lsp (0.3.8)
+      language_server-protocol (~> 3.17.0)
+      sorbet-runtime
+      syntax_tree (>= 5.0.0, < 6)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     shellany (0.0.1)
@@ -287,6 +293,7 @@ GEM
     snaky_hash (2.0.1)
       hashie
       version_gem (~> 1.1, >= 1.1.1)
+    sorbet-runtime (0.5.10634)
     sorcery (0.16.4)
       bcrypt (~> 3.1)
       oauth (~> 0.5, >= 0.5.5)
@@ -298,6 +305,8 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    syntax_tree (5.2.0)
+      prettier_print (>= 1.2.0)
     thor (1.2.1)
     timeout (0.3.1)
     turbo-rails (1.3.2)
@@ -353,6 +362,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
+  ruby-lsp (~> 0.3.8)
   shoulda-matchers (~> 5.2)
   sorcery (~> 0.16.4)
   sprockets-rails
