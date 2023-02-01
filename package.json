@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@hotwired/turbo-rails": "^7.2.4",
+    "@hotwired/turbo-rails": "^7.2.5",
     "alpine-turbo-drive-adapter": "^2.0.0",
     "alpinejs": "^3.10.5",
     "autoprefixer": "^10.4.13",
