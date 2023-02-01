@@ -2,7 +2,7 @@
   "dependencies": {
     "@hotwired/turbo-rails": "^7.2.4",
     "alpine-turbo-drive-adapter": "^2.0.0",
-    "alpinejs": "^3.10.5",
+    "alpinejs": "^3.11.1",
     "autoprefixer": "^10.4.13",
     "daisyui": "^2.46.0",
     "postcss": "^8.4.18",
