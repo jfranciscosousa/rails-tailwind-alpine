@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "@hotwired/turbo-rails": "^7.2.4",
+    "@hotwired/turbo-rails": "^7.2.5",
     "alpine-turbo-drive-adapter": "^2.0.0",
-    "alpinejs": "^3.10.5",
+    "alpinejs": "^3.11.1",
     "autoprefixer": "^10.4.13",
-    "daisyui": "^2.46.0",
-    "postcss": "^8.4.18",
+    "daisyui": "^2.50.0",
+    "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "vite": "^4.0.0",
+    "vite": "^4.1.1",
     "vite-plugin-ruby": "^3.1.2"
   }
 }
