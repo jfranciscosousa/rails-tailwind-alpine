@@ -93,11 +93,3 @@ jobs:
         run: |
           bundle exec rake db:migrate
           bundle exec rake spec
-
-      - name: Setup fly
-        if: github.ref == 'refs/heads/master'
-        uses: superfly/flyctl-actions/setup-flyctl@master
-
-      - name: Deploy fly
-        if: github.ref == 'refs/heads/master'
-        run: flyctl deploy --remote-only
