@@ -70,6 +70,6 @@ group :development do
   gem "rubocop-performance"
   gem "rubocop-rails"
   gem "rubocop-rspec"
-  gem "ruby-lsp", "~> 0.3.8"
+  gem "ruby-lsp", "~> 0.4.1"
   gem "web-console"
 end
