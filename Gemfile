@@ -7,7 +7,7 @@ ruby "3.2.0"
 gem "sorcery", "~> 0.16.4"
 
 # Library for ruby html/css/js components
-gem "view_component", "~> 2.80.0"
+gem "view_component", "~> 3.0.0"
 
 # Vite is Webpack but good
 gem "vite_rails"
