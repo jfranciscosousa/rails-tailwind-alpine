@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.0"
 
 # Auth library
-gem "sorcery", "~> 0.16.4"
+gem "sorcery", "~> 0.16.5"
 
 # Library for ruby html/css/js components
 gem "view_component", "~> 2.80.0"
